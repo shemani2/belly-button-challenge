@@ -146,7 +146,6 @@ function buildBarPlot (sampleID) {
 
 // fig.show()
 
-
 //Function that builds bubble plot
 function buildBubblePlot (sampleID) {
   d3.json(url).then(function(bellybuttondata) {
@@ -191,3 +190,65 @@ function optionChanged(sampleID) {
   buildBarPlot(sampleID);
   buildBubblePlot(sampleID);
 };
+
+
+// function buildGaugePlot(sampleID) {
+//   d3.json(url).then(function(data) {
+//       let metadata = data.metadata;
+//       let sampleArray = metadata.filter(sample => sample.id == sampleID);
+//       let sample = sampleArray[0];
+      
+//       // Get the washing frequency for the gauge chart
+//       let washFrequency = sample.wfreq;
+      
+//       // Define the data for the gauge chart
+//       let data = [
+//           {
+//               domain: { x: [0, 1], y: [0, 1] },
+//               value: washFrequency,
+//               title: { text: "Belly Button Washing Frequency" },
+//               type: "indicator",
+//               mode: "gauge+number",
+//               gauge: {
+//                   axis: { range: [0, 9] },
+//                   steps: [
+//                       { range: [0, 1], color: "rgb(248, 243, 236)" },
+//                       { range: [1, 2], color: "rgb(244, 241, 229)" },
+//                       { range: [2, 3], color: "rgb(233, 230, 202)" },
+//                       { range: [3, 4], color: "rgb(229, 231, 179)" },
+//                       { range: [4, 5], color: "rgb(213, 228, 157)" },
+//                       { range: [5, 6], color: "rgb(183, 204, 146)" },
+//                       { range: [6, 7], color: "rgb(140, 191, 136)" },
+//                       { range: [7, 8], color: "rgb(138, 187, 143)" },
+//                       { range: [8, 9], color: "rgb(133, 180, 138)" }
+//                   ],
+//                   threshold: {
+//                       line: { color: "red", width: 4 },
+//                       thickness: 0.75,
+//                       value: washFrequency
+//                   }
+//               }
+//           }
+//       ];
+
+//       // Define the layout for the gauge chart
+//       let layout = { width: 600, height: 500, margin: { t: 0, b: 0 } };
+
+//       // Call Plotly to plot the gauge chart
+//       Plotly.newPlot("gauge", data, layout);
+//   });
+// };
+
+// function init() {
+//   // Your existing code for populating dropdown menu and initializing other plots
+
+//   // Call the buildGaugePlot function to initialize the gauge chart
+//   buildGaugePlot(firstSample);
+// };
+
+// function optionChanged(sampleID) {
+//   buildMetadata(sampleID);
+//   buildBarPlot(sampleID);
+//   buildBubblePlot(sampleID);
+//   buildGaugePlot(sampleID); // Add this line to update the gauge chart
+// };
