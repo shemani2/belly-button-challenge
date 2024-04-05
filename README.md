@@ -3,8 +3,8 @@
 # Disclosure: 
 With the help of the module activities, peer consultation, and online search help, the module activity was completed. Various attempts at the bonus were made but none of them work with the current code. Any edits or recommendations would be appreciated. 
 
-Background
-In this assignment, you will build an interactive dashboard to explore the Belly Button Biodiversity datasetLinks to an external site., which catalogs the microbes that colonize human navels.
+# Background
+In this assignment, you will build an interactive dashboard to explore the Belly Button Biodiversity dataset links to an external site., which catalogs the microbes that colonize human navels.
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
 Before You Begin
 1.	Create a new repository for this project called belly-button-challenge. Do not add this Challenge to an existing repository.
