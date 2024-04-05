@@ -1,7 +1,7 @@
 # belly-button-challenge
 
 # Disclosure: 
-With the help of the module activities, peer consultation, and online search help, the module activity was completed. Various attempts at the bonus were made but none of them work with the current code. Any edits or recommendations would be appreciated. 
+With the help of the module activities, peer consultation, and online search help, the module activity was completed. Various attempts at the bonus were made, even with help from AI, but none of them worked with the current code. Any edits or recommendations would be appreciated. 
 
 # Background
 In this assignment, you will build an interactive dashboard to explore the Belly Button Biodiversity dataset links to an external site., which catalogs the microbes that colonize human navels.
